@@ -1,10 +1,10 @@
 # gitflow_20174317
 
-###getopt 및 getopts 명령어
+### getopt 및 getopts 명령어
 
 ***
 
-#getopt
+# getopt
 
 * getopt를 사용하는 이유는 
 
@@ -46,7 +46,7 @@ done
 
 가장 중요한 부분은 아래의 구분인데 
 
-***while getopts "a:b:h" opt***
+***while getopts "a: b :h" opt***
 
 보통 다음과 같은 형식을 주로 사용하고 getopt는 첫번째 파라미터로 옵션으로 사용될 문자열을 입력 받고 다음에는 옵션으로 활용되는 변수를 사용합니다.
  
@@ -56,13 +56,42 @@ getopt를 사용할 때 주의해야 할 점은 **":"** 입니다. 기존적으�
 
 ***
 
-#gitopts
+# gitopts
 
 ![getopts](https://user-images.githubusercontent.com/94783175/142760812-0c9df6ae-35e6-4ff1-b8bc-5d2f089058a3.png)
 
-쉘 에서 명령을 실행할 때 옵션을 사용하는데요. 스크립트 파일이나 함수를 실행할 때도 동일하게 옵션을 사용할 수 있습니다. 
+* 쉘 에서 명령을 실행할 때 옵션을 사용하는데요. 스크립트 파일이나 함수를 실행할 때도 동일하게 옵션을 사용할 수 있습니다. 
 
-사용된 옵션은 다른 인수들과 마찬가지로 $1, $2, ... positional parameters 형태로 전달되므로 스크립트 내에서 직접 옵션을 해석해서 사용해야 됩니다. 
+* 사용된 옵션은 다른 인수들과 마찬가지로 $1, $2, ... positional parameters 형태로 전달되므로 스크립트 내에서 직접 옵션을 해석해서 사용해야 됩니다. 
 
-이때 옵션 해석 작업을 쉽게 도와주는 명령이 getopts 입니다.
+* 이때 옵션 해석 작업을 쉽게 도와주는 명령이 getopts 입니다.
 
+<https://mug896.github.io/bash-shell/getopts.html>
+
+***
+
+### sed 및 awk 명령어
+
+# sed
+
+* 기본적인 기능은 ed에서 가져왔다고 한다. 
+* 이 기능들은 모두 sed에 적용이 된다. 
+* sed는 스트리밍 편집기라고 한다. 
+* 대화형 편집기는 입력 및 출력이 하나로 이루어지며, \n을 개행문자로 사용하는 스트리밍 에디터이다.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<https://blog.wonizz.tk/2019/03/05/%EB%AA%85%EB%A0%B9%EC%96%B4-sed-%EB%B0%8F-awk-%EC%82%AC%EC%9A%A9%EB%B2%95/>
