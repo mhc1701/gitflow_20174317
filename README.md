@@ -79,12 +79,28 @@ getopt를 사용할 때 주의해야 할 점은 **":"** 입니다. 기존적으�
 * sed는 스트리밍 편집기라고 한다. 
 * 대화형 편집기는 입력 및 출력이 하나로 이루어지며, \n을 개행문자로 사용하는 스트리밍 에디터이다.
 
+1) 찾기(search), 출력(print)
+ >sed -n '/abd/p' list.txt : list.txt 파일을 한줄씩 읽으면서(-n : 읽은 것을 출력하지 않음) abd 문자를 찾으면 그 줄을 출력(p)한다.
 
+2) 치환(substitute)
+> sed 's/addrass/address/' list.txt : addrass를 address로 바꾼다. 단, 원본파일을 바꾸지 않고 출력을 바꿔서 한다.
 
+> sed 's/addrass/address/' list.txt > list2.txt
 
+> sed 's/\t/\ /' list.txt : 탭문자를 엔터로 변환
 
+> sed 's/□□*/□/' list.txt : ( 표시: □ 는 공백 문자를 표시한다. ) 위의 구문은 한개이상의 공백문자열을 하나의 공백으로 바꾼다.
 
+3) 추가(insert)
+> scriptfile - s/
 
+4) 삭제(delete)
+> sed '/TD/d' 1.html : TD 문자가 포함된 줄을 삭제하여 출력한다.
+> sed '/Src/!d' 1.html : Src 문자가 있는 줄만 지우지 않는다.
+> sed '1,2d' 1.html : 처음 1줄, 2줄을 지운다.
+> sed '/^$/d 1.html : 공백라인을 삭제하는 명령이다
+
+# awk 
 
 
 
