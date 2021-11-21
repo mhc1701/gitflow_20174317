@@ -79,6 +79,12 @@ getopt를 사용할 때 주의해야 할 점은 **":"** 입니다. 기존적으�
 * sed는 스트리밍 편집기라고 합니다. 
 * 대화형 편집기는 입력 및 출력이 하나로 이루어지며, \n을 개행문자로 사용하는 스트리밍 에디터입니다.
 
+![99EF243359E1DD1234](https://user-images.githubusercontent.com/94783175/142761734-b3fcc668-30c4-4ea4-ab54-582863afc607.png)
+
+![99C2DB3359E1DD400B](https://user-images.githubusercontent.com/94783175/142761735-7b88ab54-0be7-4b9a-9bc1-f73279ce6f06.png)
+
+
+
 1) 찾기(search), 출력(print)
  >sed -n '/abd/p' list.txt : list.txt 파일을 한줄씩 읽으면서(-n : 읽은 것을 출력하지 않음) abd 문자를 찾으면 그 줄을 출력(p)합니다.
 
